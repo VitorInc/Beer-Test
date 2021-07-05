@@ -1,10 +1,9 @@
-package br.com.beer.beer;
+package br.com.beer.beer.entity;
 
-import br.com.beer.beer.controller.BeerType;
+import br.com.beer.beer.enums.BeerType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import net.bytebuddy.dynamic.loading.InjectionClassLoader;
 
 import javax.persistence.*;
 
@@ -17,9 +16,9 @@ public class Beer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(nullable = false)
-    private String name;
     @Column(nullable = false, unique = true)
+    private String name;
+    @Column(nullable = false)
     private String brand;
     @Column(nullable = false)
     private int max;

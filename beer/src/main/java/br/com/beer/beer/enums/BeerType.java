@@ -1,4 +1,4 @@
-package br.com.beer.beer.controller;
+package br.com.beer.beer.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
